@@ -25,4 +25,4 @@ class MyString:
         return self.value[-1] == '!'
     
     def count_sentences(self):
-        return len(re.findall('\w\.|\w\?|\w\!', self.value))
+        return len(re.findall(r'\w\.|\w\?|\w\!', self.value))
